@@ -37,6 +37,10 @@ git merge feature/login            # Merge another branch into current
 git branch -d feature/login        # Delete branch after merging
 ```
 
+```bash
+git push -u origin feature/forgot-password # pushing the branch to github
+```
+
 ---
 
 ## 📥 Staging & Committing
@@ -129,12 +133,14 @@ git stash pop                      # Re-apply last stash
 ## 🛑 Remove Git Tracking
 
 ### Stop tracking a project:
+
 ```bash
 rmdir /s /q .git                   # Windows (PowerShell/CMD)
 rm -rf .git                        # macOS/Linux
 ```
 
 ### Reinitialize clean Git project:
+
 ```bash
 git init
 git add .
